@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Homework36" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0fP-DS-Thh">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YEB-eC-ECH">
+                                    <size key="itemSize" width="414" height="823"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PageCell" id="Eas-tm-63Z" customClass="PageCell" customModule="Homework36" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-2.5" width="414" height="823"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KZf-bM-xRz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="823"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qle-CX-Pc3">
+                                                    <rect key="frame" x="50" y="150" width="314" height="220"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="220" id="DwB-At-5Qe"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="y5O-wC-I8F">
+                                                    <rect key="frame" x="50" y="439" width="314" height="65"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Online Shopping" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lr2-Fb-4oi">
+                                                            <rect key="frame" x="0.0" y="0.0" width="314" height="21.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                            <color key="textColor" red="0.10980392156862745" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="some text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7U-Kg-6DS">
+                                                            <rect key="frame" x="0.0" y="47.5" width="314" height="17.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                            <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="u7U-Kg-6DS" firstAttribute="leading" secondItem="lr2-Fb-4oi" secondAttribute="leading" id="FBA-wf-8pd"/>
+                                                        <constraint firstItem="u7U-Kg-6DS" firstAttribute="trailing" secondItem="lr2-Fb-4oi" secondAttribute="trailing" id="NSR-RF-VbC"/>
+                                                        <constraint firstAttribute="width" constant="314" id="d0c-UX-pSI"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="y5O-wC-I8F" firstAttribute="leading" secondItem="Qle-CX-Pc3" secondAttribute="leading" id="LH9-LO-BTA"/>
+                                                <constraint firstItem="Qle-CX-Pc3" firstAttribute="leading" secondItem="KZf-bM-xRz" secondAttribute="leading" constant="50" id="cEY-4S-EQ0"/>
+                                                <constraint firstItem="Qle-CX-Pc3" firstAttribute="top" secondItem="KZf-bM-xRz" secondAttribute="top" constant="150" id="pS0-Zf-NSQ"/>
+                                                <constraint firstItem="y5O-wC-I8F" firstAttribute="top" secondItem="Qle-CX-Pc3" secondAttribute="bottom" constant="69" id="qYF-Gm-Pec"/>
+                                                <constraint firstItem="y5O-wC-I8F" firstAttribute="trailing" secondItem="Qle-CX-Pc3" secondAttribute="trailing" id="vnn-aR-YNr"/>
+                                                <constraint firstAttribute="trailing" secondItem="Qle-CX-Pc3" secondAttribute="trailing" constant="50" id="w5s-sN-aHg"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="414" height="823"/>
+                                        <connections>
+                                            <outlet property="headerLabel" destination="lr2-Fb-4oi" id="9G7-vo-dMc"/>
+                                            <outlet property="pageImageView" destination="Qle-CX-Pc3" id="J6y-Am-I1D"/>
+                                            <outlet property="textLabel" destination="u7U-Kg-6DS" id="if9-rD-gAD"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tMz-zr-mbT">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpx-63-2TL">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="49"/>
+                                        <color key="backgroundColor" red="0.93333333333333335" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Skip">
+                                            <color key="titleColor" red="0.10980392156862745" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="skipTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NGP-A0-A6Q"/>
+                                        </connections>
+                                    </button>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Seg-MB-eiM">
+                                        <rect key="frame" x="138" y="0.0" width="138" height="49"/>
+                                        <color key="backgroundColor" red="0.93333333333333335" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="pageIndicatorTintColor" red="0.63529411764705879" green="0.63137254901960782" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="currentPageIndicatorTintColor" red="0.31764705882352939" green="0.29019607843137252" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                                    </pageControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l62-Ki-2Ac">
+                                        <rect key="frame" x="276" y="0.0" width="138" height="49"/>
+                                        <color key="backgroundColor" red="0.93333333333333335" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" red="0.10980392156862745" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Md6-lg-f5J"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="oL2-eI-3xW"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0fP-DS-Thh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0eb-Uc-1Bj"/>
+                            <constraint firstItem="tMz-zr-mbT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kfr-C5-fJG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0fP-DS-Thh" secondAttribute="bottom" id="NwL-nf-4lU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0fP-DS-Thh" secondAttribute="trailing" id="Q8F-5l-ZMw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tMz-zr-mbT" secondAttribute="bottom" id="X93-Nm-n76"/>
+                            <constraint firstItem="0fP-DS-Thh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zpl-fr-MXE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tMz-zr-mbT" secondAttribute="trailing" id="iov-CQ-TnR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="0fP-DS-Thh" id="wzM-QC-wBO"/>
+                        <outlet property="pageControl" destination="Seg-MB-eiM" id="8Rp-GF-xrv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78.260869565217391" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+</document>
